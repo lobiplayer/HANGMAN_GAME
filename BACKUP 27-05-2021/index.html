@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id='gametitle'>Hangman Game</h1>
+    <div id='flexcontainer'>
+        <div id='hangmandiv'>
+            <img id='hangman' src="./mediafiles/images/Hangman game jpeg/png/6lives.png" height="500px" width="auto">
+        </div>
+        <div id='gametext'>
+            <div id="wordingame">
+                <p id='wordparagraph'></p>
+            </div>
+            <div id="messagediv">
+                <p id="pmessage"> You have used this letter before</p>
+            </div>
+            <div id="inputfielddiv">
+                <input type="text" id='letterfield' name='letter' minlength="1" maxlength="1" pattern="[A-Za-z]{1}" required>
+            </div>
+        </div>
+    </div>
+    <div id="playagaindiv">
+        <img id='playagainbutton' src="./mediafiles/images/Hangman game jpeg/png/Play again.png" alt="">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
